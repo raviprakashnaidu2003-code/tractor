@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/threematrix",
+        "create path (nt:unstructured) /content/dam/threematrix/jcr:content",
+        "set properties on /content/dam/threematrix/jcr:content\n  set cq:conf{String} to /conf/threematrix\n  set jcr:title{String} to \"ThreeMatrix AEM Platform\"\nend"
+    ]
+}

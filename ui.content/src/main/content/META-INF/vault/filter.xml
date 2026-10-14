@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/tractor" mode="merge"/>
+    <filter root="/content/tractor" mode="merge"/>
+    <filter root="/content/dam/tractor" mode="merge">
+        <exclude pattern="/content/dam/tractor(/.*)?"/>
+        <include pattern="/content/dam/tractor/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/tractor/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/tractor" mode="merge"/>
+</workspaceFilter>

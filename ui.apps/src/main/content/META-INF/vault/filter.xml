@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/tractor/clientlibs"/>
+    <filter root="/apps/tractor/components"/>
+    <filter root="/apps/tractor/i18n"/>
+</workspaceFilter>
