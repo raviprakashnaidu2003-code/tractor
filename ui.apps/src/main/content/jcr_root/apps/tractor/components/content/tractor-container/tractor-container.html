@@ -1,0 +1,18 @@
+
+<sly data-sly-use.model="com.tractor.aem.core.models.TractorContainerModel" />
+
+<div class="tractor-container tractor-container--grid-3"
+     data-cmp-is="tractor-container">
+
+    <sly data-sly-list.child="${model.children}">
+        <div class="tractor-container__item">
+            <sly data-sly-resource="${child.path @ decorationTagName='div'}"></sly>
+        </div>
+    </sly>
+
+</div>
+
+<div data-sly-test="${wcmmode.edit && model.empty}"
+     class="cq-placeholder"
+     data-emptytext="Tractor Container — add components here">
+</div>

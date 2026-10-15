@@ -1,0 +1,10 @@
+<sly data-sly-use.detail="com.tractor.aem.core.models.TractorDetailModel" />
+<section class="tractor-specifications" data-sly-test="${detail.valid}" aria-labelledby="tractor-specifications-title">
+  <h2 id="tractor-specifications-title">Technical Specifications</h2>
+  <div class="tractor-table-wrap"><table class="tractor-table"><tbody>
+    <tr><th scope="row">Model</th><td>${detail.modelName}</td></tr>
+    <tr data-sly-test="${detail.horsePower}"><th scope="row">Horsepower</th><td>${detail.horsePower} HP</td></tr>
+    <tr data-sly-test="${detail.engineType}"><th scope="row">Engine type</th><td>${detail.engineType}</td></tr>
+    <tr data-sly-test="${detail.weightkg}"><th scope="row">Weight</th><td>${detail.weightkg} kg</td></tr>
+  </tbody></table></div>
+</section>

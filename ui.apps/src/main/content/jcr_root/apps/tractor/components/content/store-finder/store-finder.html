@@ -1,0 +1,14 @@
+<section class="store-finder" data-store-finder data-endpoint="/bin/itransparity/stores.json" data-ip-lookup-url="" aria-labelledby="store-finder-title">
+  <div class="store-finder__heading"><p class="eyebrow">OUR DEALER NETWORK</p><h2 id="store-finder-title">Find a tractor dealership</h2><p>Use your location or choose a region to see nearby stores.</p></div>
+  <div class="store-finder__controls">
+    <label for="store-region">Choose a region</label>
+    <select id="store-region" data-region-select>
+      <option value="auto">Use my current location</option><option value="london">London, UK</option><option value="kenya">Nairobi, Kenya</option><option value="delhi">Delhi, India</option><option value="unknown">Other / unlisted location</option>
+    </select>
+    <button type="button" class="button button--primary" data-use-location>Use my location</button>
+    <button type="button" class="button button--secondary" data-refresh-location>Refresh location</button>
+  </div>
+  <p class="store-finder__status" data-status role="status" aria-live="polite">Choose a region or allow location access.</p>
+  <div class="store-finder__results" data-results aria-live="polite"></div>
+  <noscript><p>Enable JavaScript to use the Store Finder.</p></noscript>
+</section>

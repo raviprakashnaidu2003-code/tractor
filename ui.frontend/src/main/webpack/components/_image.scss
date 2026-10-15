@@ -1,3 +1,18 @@
+
+/* iTransparity logo in header */
+#itransparitylogo {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 150px;
+    height: 45px;
+    object-fit: contain;
+    object-position: left center;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
 .cmp-image {}
 .cmp-image__link {}
 .cmp-image__image {}

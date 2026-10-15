@@ -1,0 +1,20 @@
+<sly data-sly-use.tile="com.tractor.aem.core.models.TractorTileModel" />
+<article class="tractor-tile" data-sly-test="${tile.title}">
+    <div class="tractor-tile__image-wrapper" data-sly-test="${tile.imagePath}">
+        <img class="tractor-tile__image"
+             src="${tile.imagePath @ context='uri'}"
+             alt="${tile.altText}"
+             loading="lazy" />
+    </div>
+    <div class="tractor-tile__content">
+        <h2 class="tractor-tile__title">${tile.title}</h2>
+        <p class="tractor-tile__description" data-sly-test="${tile.description}">${tile.description}</p>
+        <a class="tractor-tile__button"
+           data-sly-test="${tile.buttonHref && tile.buttonText}"
+           href="${tile.buttonHref @ context='uri'}">
+            ${tile.buttonText}
+        </a>
+    </div>
+</article>
+<div class="cq-placeholder" data-sly-test="${wcmmode.edit && !tile.title}"
+     data-emptytext="Configure Tractor Tile" />

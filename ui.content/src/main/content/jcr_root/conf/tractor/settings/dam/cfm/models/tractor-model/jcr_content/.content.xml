@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:PageContent"
+    jcr:title="Tractor Model"
+    cq:template="/libs/settings/dam/cfm/model-types/fragment"
+    sling:resourceType="dam/cfm/models/console/components/data">
+    <model jcr:primaryType="nt:unstructured">
+        <modelName jcr:primaryType="nt:unstructured" fieldLabel="Model Name" name="modelName" fieldType="text" metaType="text-single" valueType="string" required="true" />
+        <slug jcr:primaryType="nt:unstructured" fieldLabel="URL Slug" name="slug" fieldType="text" metaType="text-single" valueType="string" required="true" />
+        <shortDescription jcr:primaryType="nt:unstructured" fieldLabel="Short Description" name="shortDescription" fieldType="text" metaType="text-multi" valueType="string" required="true" />
+        <fullDescription jcr:primaryType="nt:unstructured" fieldLabel="Full Description" name="fullDescription" fieldType="text" metaType="text-multi" valueType="string" required="true" />
+        <horsepower jcr:primaryType="nt:unstructured" fieldLabel="Horsepower (HP)" name="horsepower" fieldType="number" metaType="number" valueType="long" required="true" />
+        <engineType jcr:primaryType="nt:unstructured" fieldLabel="Engine Type" name="engineType" fieldType="text" metaType="text-single" valueType="string" required="true" />
+        <weightKg jcr:primaryType="nt:unstructured" fieldLabel="Weight (kg)" name="weightKg" fieldType="number" metaType="number" valueType="long" required="false" />
+        <fuelCapacityLitres jcr:primaryType="nt:unstructured" fieldLabel="Fuel Capacity (litres)" name="fuelCapacityLitres" fieldType="number" metaType="number" valueType="long" required="false" />
+        <mainImage jcr:primaryType="nt:unstructured" fieldLabel="Main Product Image" name="mainImage" fieldType="content-reference" metaType="content-reference" valueType="string" required="true" />
+        <galleryImages jcr:primaryType="nt:unstructured" fieldLabel="Gallery Images" name="galleryImages" fieldType="content-reference" metaType="content-reference" valueType="string" multiple="true" required="false" />
+        <detailPagePath jcr:primaryType="nt:unstructured" fieldLabel="Detail Page Path" name="detailPagePath" fieldType="text" metaType="text-single" valueType="string" required="true" />
+        <specSheet jcr:primaryType="nt:unstructured" fieldLabel="Specification PDF (optional)" name="specSheet" fieldType="content-reference" metaType="content-reference" valueType="string" required="false" />
+        <specifications jcr:primaryType="nt:unstructured" fieldLabel="Additional Specifications" name="specifications" fieldType="text" metaType="text-multi" valueType="string" required="false" />
+    </model>
+</jcr:root>

@@ -1,0 +1,11 @@
+<sly data-sly-use.detail="com.tractor.aem.core.models.TractorDetailModel" />
+<article class="tractor-detail" data-sly-test="${detail.valid}">
+  <div class="tractor-detail__hero">
+    <img class="tractor-detail__image" src="${detail.imagePath @ context='uri'}" alt="${detail.modelName}" data-sly-test="${detail.imagePath}" />
+    <div class="tractor-detail__intro"><h3>${detail.modelName}</h3><p class="tractor-detail__lead">${detail.shortDescription}</p></div>
+  </div>
+  <hr class="tractor-divider" />
+  <section class="tractor-detail__description"><div class="tractor-richtext">${detail.fullDescription @ context='html'}</div></section>
+<a href="${detail.pagePath @context=uri}">Read More</a>
+</article>
+<div class="tractor-card tractor-card--author-help" data-sly-test="${wcmmode.edit && !detail.valid}">Select a Tractor Content Fragment in this component's dialog.</div>
